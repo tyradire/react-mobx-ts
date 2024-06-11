@@ -1,0 +1,9 @@
+.splash {
+  position: absolute;
+  top: calc(50% - 25vw);
+  left: 25vw;
+  width: 50vw;
+  height: 50vw;
+  display: flex;
+  margin: 0 auto;
+}

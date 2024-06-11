@@ -1,0 +1,62 @@
+.company {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 6vw 4vw;
+  box-sizing: border-box;
+  border-radius: 5vw;
+}
+.company__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2vw;
+  border-bottom: 1px solid #efefef;
+}
+.company__name {
+  margin: 0;
+  font-size: 6vw;
+  line-height: 100%;
+  font-weight: 500;
+}
+.company__logo {
+  width: 13vw;
+  height: 13vw;
+  border-radius: 50%;
+}
+.company__bonus {
+  margin: 0;
+  margin-top: 4vw;
+  font-size: 4vw;
+  line-height: 100%;
+  font-weight: 500;
+  padding-bottom: 2vw;
+}
+.company__bonus_value {
+  margin: 0;
+  margin-right: 2vw;
+  font-size: 6vw;
+  line-height: 100%;
+  font-weight: 700;
+}
+.company__cashback {
+  display: flex;
+  column-gap: 10vw;
+  padding-bottom: 2vw;
+  border-bottom: 1px solid #efefef;
+}
+.company__cashback-subtitle {
+  margin: 0;
+  font-size: 3vw;
+  color: #949494;
+}
+.company__cashback-value {
+  margin: 0;
+  font-size: 4vw;
+  margin-top: 2vw;
+}
+.company__controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2vw;
+}

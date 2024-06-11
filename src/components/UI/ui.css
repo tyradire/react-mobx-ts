@@ -1,0 +1,46 @@
+.btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.btn-icon {
+  width: 6vw;
+  height: 6vw;
+  padding: 0;
+}
+.btn-icon svg {
+  width: 6vw;
+  height: 6vw;
+}
+.btn-details {
+  padding: 3vw 9vw;
+  border-radius: 3vw;
+  font-size: 4vw;
+}
+.btn-accept {
+  font-size: 5vw;
+  background-color: #2688eb;
+  color: #ffffff;
+  padding: 2vw 12vw;
+  border-radius: 3vw;
+}
+.spinner {
+  width: 16vw;
+  height: 16vw;
+  border: 2vw solid #1a1a1a;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: spinnerAnimation 1s linear infinite;
+}
+
+@keyframes spinnerAnimation {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
