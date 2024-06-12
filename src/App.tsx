@@ -7,23 +7,26 @@ import { useEffect, useState } from 'react';
 import appStore from 'stores/app-store';
 import './App.css';
 import Splash from './components/Splash/Splash';
-import data from './data/data.ts';
 
 const App = observer(() => {
-  const { companies, modalHidden, getAllCards } = appStore;
+  const { companies, modalHidden, fetchData, isFetching } = appStore;
 
-  const [visibleLogo, setVisibleLogo] = useState<boolean>(true);
+  let logoStatus: boolean = JSON.parse(sessionStorage.getItem("splashVisible") || 'true');
+
+  const [visibleLogo, setVisibleLogo] = useState<boolean>(logoStatus);
   
   useEffect(() => {
     setTimeout(
-      () => {setVisibleLogo(false)},3000
+      () => {
+        setVisibleLogo(false)
+        sessionStorage.setItem("splashVisible", "false");
+      },3000
     )
-
   }, [])
 
   useEffect(() => {
     if (visibleLogo) return;
-    getAllCards(data);
+    fetchData();
   }, [visibleLogo])
 
   return (
@@ -35,11 +38,14 @@ const App = observer(() => {
             <div className='cover' hidden={modalHidden}></div>
             <Header />
             { 
-
-              companies.length === 0
+              isFetching
                 ? <Preloader />
-                : <Companies />
-
+                : companies.length === 0
+                  ? <p className='message'>Нет компаний</p>
+                  : <Companies />
+            }
+            {
+              isFetching && companies.length > 0 && <Preloader />
             }
             <Popup />
           </>

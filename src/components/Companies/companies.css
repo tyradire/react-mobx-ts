@@ -1,8 +1,7 @@
 .companies {
   max-width: 90vw;
   list-style: none;
-  margin: 0 auto;
-  margin-top: 4vw;
+  margin: 4vw auto;
   padding: 0;
   row-gap: 4vw;
   display: flex;

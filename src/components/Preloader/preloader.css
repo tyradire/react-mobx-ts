@@ -4,11 +4,3 @@
   align-items: center;
   margin-top: 8vw;
 }
-.preloader__message {
-  margin: 0;
-  margin-top: 4vw;
-  color: #1a1a1a;
-  font-size: 5vw;
-  line-height: 100%;
-  font-weight: 400;
-}

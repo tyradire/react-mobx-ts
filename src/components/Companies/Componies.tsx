@@ -7,16 +7,16 @@ const Companies = observer(() => {
   const { companies } = appStore;
 
   return (
-      <ul className='companies'>
-        {
-          companies.map(company => <Company 
-              id={company.company.companyId} 
-              customer={company.customerMarkParameters} 
-              dashboard={company.mobileAppDashboard} 
-              key={company.company.companyId} />
-            )
-        }
-      </ul>
+    <ul className='companies'>
+      {
+        companies.map(company => <Company 
+            id={company.company.companyId} 
+            customer={company.customerMarkParameters} 
+            dashboard={company.mobileAppDashboard} 
+            key={company.company.companyId} />
+          )
+      }
+    </ul>
   )
 });
 

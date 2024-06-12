@@ -6,7 +6,7 @@ function Preloader() {
   return (
       <div className="preloader">
         <Spinner />
-        <p className="preloader__message">Подгрузка команий</p>
+        <p className="message">Подгрузка компаний</p>
       </div>
   )
 }

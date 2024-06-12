@@ -21,6 +21,7 @@
       "assets/*": ["assets/*"],
       "model/*": ["model/*"],
       "stores/*": ["stores/*"],
+      "api/*": ["api/*"],
     },
 
     /* Linting */
